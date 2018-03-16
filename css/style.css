@@ -67,7 +67,6 @@ blockquote {
 */
 .default-section {
 	padding: 135px 0;
-	overflow: hidden;
 }
 .small-section {
 	padding: 70px 0;
@@ -207,14 +206,11 @@ blockquote span,
 }
 /* ----- Inner end ----- */
 /* ----- About studio start ----- */
-.team-wrapper {
-	overflow: hidden;
-	width: 100%;
-}
-.team-item .team-item-img {
+.about-studio .team-item .team-item-img {
 	position: relative;
+	margin-bottom: 30px;
 }
-.team-item .team-item-skills {
+.about-studio .team-item .team-item-skills {
 	opacity: 0;
 	position: absolute;
 	top: 0;
@@ -223,11 +219,71 @@ blockquote span,
 	background-color: #000;
 	transition: all .2s linear;
 }
-.team-item .team-item-img:hover .team-item-skills {
+.about-studio .team-item .team-item-img:hover .team-item-skills {
 	opacity: 1;
 }
-.team-item .team-item-info span {
+.about-studio .team-item .team-item-info span {
 	display: block;
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .4em;
+	text-indent: .4em;
+	font-weight: 400;
+}
+.about-studio .team-item .team-item-info span.team-item-role {
+	font-size: 12px;
+	margin-top: 14px;
 }
 /* ----- About studio end ----- */
+/* ----- Why choose us start ----- */
+.why-choose-us .row + .row {
+	margin-top: 85px;
+}
+.why-choose-us .title-wrapper > span {
+	font-size: 48px;
+	color: #111;
+}
+.why-choose-us .title-wrapper .title {
+	font-weight: 400;
+	letter-spacing: .4em;
+	text-indent: .4em;
+	margin: 35px 0;
+}
+/* ----- Why choose us end ----- */
+/* ----- Latest news start ----- */
+.latest-news .title a {
+	float: right;
+	font-size: 11px;
+	letter-spacing: .4em;
+	color: #999999;
+}
+.latest-news .news-item .news-item-img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	transition: all .2s linear;
+}
+.latest-news .news-item .news-item-img:hover {
+	-webkit-filter: none;
+	filter: none;
+}
+.latest-news .news-item .news-item-title {
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	font-weight: 400;
+	margin-top: 30px;
+	margin-bottom: 26px;
+}
+.latest-news .news-item .news-item-title span {
+	display: block;
+	font-size: 11px;
+	color: #999999;
+	letter-spacing: .4em;
+	margin-top: 17px;
+}
+.latest-news .news-item p {
+	color: #999999;
+	margin-bottom: 30px;
+}
+/* ----- Latest news end ----- */
 /* ==== Custom styles end ===== */
