@@ -30,11 +30,18 @@ ul, ol{
 img {
 	max-width: 100%;
 }
+input,
+textarea,
 button {
 	outline: none;
 	border: none;
+}
+button {
 	cursor: pointer;
 	background-color: transparent;
+}
+textarea {
+	resize: vertical;
 }
 blockquote {
 	margin: 0;
@@ -127,9 +134,13 @@ blockquote span,
 	cursor: pointer;
 	line-height: 1;
 }
+.btn[disabled] {
+	cursor: not-allowed;
+	opacity: .6;
+}
 .btn.btn-default {
 	background-color: #e5e5e5;
-	color: #777;
+	color: #111;
 }
 .btn.btn-default:hover {
 	background-color: #d1d0d0;
@@ -144,6 +155,44 @@ blockquote span,
 .btn.btn-xs {
 	padding: 7px 15px;
 	font-size: 11px;
+	color: #777;
+}
+.form-control {
+	width: 100%;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	height: 36px;
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	color: #777;
+	padding-left: 13px;
+	padding-right: 13px;
+}
+.form-control:focus {
+	border-color: #111;
+}
+textarea.form-control {
+	min-height: 82px;
+	padding-top: 10px;
+}
+.form-control[disabled],
+.form-control.disabled {
+	cursor: not-allowed;
+	opacity: .6;
+}
+.form-control.error {
+	border-color: #f57e7e;
+}
+.form-info {
+	color: #aaa;
+	font-size: 11px;
+	font-weight: 400;
+}
+.form-info .fa {
+	font-size: 12px;
 }
 .header {
 	overflow: hidden;
@@ -173,6 +222,12 @@ blockquote span,
 	margin-left: 35px;
 }
 /* ===== Default component end ===== */
+/* ===== Guide styles start ===== */
+.guid-section form .form-control + .form-control {
+	margin: 10px 0;
+}
+
+/* ===== Guide styles start end ===== */
 /* ===== Custom styles start ===== */
 /* ----- Inner start ----- */
 .inner {
@@ -274,9 +329,23 @@ blockquote span,
 	margin-top: 35px;
 }
 /* ----- Services end ----- */
+/* ----- Lets talk start ----- */
+.lets-talk-content {
+	padding: 140px 0;
+}
+.lets-talk-content p {
+	color: rgba(255, 255, 255, .7);
+	margin-bottom: 35px;
+}
+.lets-talk .lets-talk-img {
+	margin-top: -32px;
+}
+
+/* ----- Lets talk end ----- */
 /* ----- Portfolio start ----- */
 .portfolio {
 	overflow: hidden;
+	padding-bottom: 0;
 }
 .portfolio p {
 	max-width: 750px;
@@ -309,7 +378,7 @@ blockquote span,
 #tabs-portfolio .portfolio-item {
 	width: 33.3333333%;
 	float: left;
-	padding: 3px;
+	padding: 0 3px 6px 3px;
 	line-height: 0;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
@@ -318,6 +387,9 @@ blockquote span,
 #tabs-portfolio .portfolio-item:hover {
 	-webkit-filter: none;
 	filter: none;
+}
+#tabs-portfolio .portfolio-item img {
+	width: 100%;
 }
 /* ----- Portfolio end ----- */
 /* ----- Why choose us start ----- */
@@ -371,4 +443,12 @@ blockquote span,
 	margin-bottom: 30px;
 }
 /* ----- Latest news end ----- */
+/* -----  Subscribe start ----- */
+.subscribe form .form-control {
+	max-width: 290px;
+}
+.subscribe .form-info {
+	margin-top: 17px;
+}
+/* ----- Subscribe end ----- */
 /* ==== Custom styles end ===== */
