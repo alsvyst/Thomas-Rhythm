@@ -123,6 +123,9 @@ blockquote span,
 	font-size: 12px;
 	font-weight: 400;
 	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	cursor: pointer;
+	line-height: 1;
 }
 .btn.btn-default {
 	background-color: #e5e5e5;
@@ -206,6 +209,9 @@ blockquote span,
 }
 /* ----- Inner end ----- */
 /* ----- About studio start ----- */
+.about-studio {
+	border-bottom: 1px solid rgba(19, 19, 19, .08);
+}
 .about-studio .team-item .team-item-img {
 	position: relative;
 	margin-bottom: 30px;
@@ -235,6 +241,85 @@ blockquote span,
 	margin-top: 14px;
 }
 /* ----- About studio end ----- */
+/* ----- Services start ----- */
+#tabs .tabs-nav {
+	overflow: hidden;
+}
+#tabs .tabs-nav li {
+	float: left;
+	width: 20%;
+	text-align: center;
+	margin-bottom: 80px;
+}
+#tabs .tabs-nav li.ui-state-active {
+	color: #111;
+}
+#tabs .tabs-nav a:focus {
+	outline: none;
+}
+#tabs .tabs-nav li span {
+	display: block;
+}
+#tabs .tabs-nav li .icon {
+	font-size: 48px;
+	font-weight: 500;
+}
+#tabs .tabs-nav li .tabs-name {
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .4em;
+	text-indent: .4em;
+	font-weight: 400;
+	font-size: 14px;
+	margin-top: 35px;
+}
+/* ----- Services end ----- */
+/* ----- Portfolio start ----- */
+.portfolio {
+	overflow: hidden;
+}
+.portfolio p {
+	max-width: 750px;
+	margin: 0 auto;
+}
+#tabs-portfolio .tabs-nav {
+	text-align: center;
+	margin-top: 85px;
+	margin-bottom: 50px;
+}
+#tabs-portfolio .tabs-nav li {
+	display: inline-block;
+	text-align: center;
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .4em;
+	text-indent: .4em;
+	font-weight: 400;
+	font-size: 13px;
+}
+#tabs-portfolio .tabs-nav li + li {
+	margin-left: 60px;
+}
+#tabs-portfolio .tabs-nav li.ui-state-active {
+	color: #111;
+}
+#tabs-portfolio .tabs-nav a:focus {
+	outline: none;
+}
+#tabs-portfolio .portfolio-item {
+	width: 33.3333333%;
+	float: left;
+	padding: 3px;
+	line-height: 0;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	transition: all .2s linear;
+}
+#tabs-portfolio .portfolio-item:hover {
+	-webkit-filter: none;
+	filter: none;
+}
+/* ----- Portfolio end ----- */
 /* ----- Why choose us start ----- */
 .why-choose-us .row + .row {
 	margin-top: 85px;
