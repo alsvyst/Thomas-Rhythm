@@ -43,6 +43,9 @@ button {
 textarea {
 	resize: vertical;
 }
+input[type="submit"]{
+	cursor: pointer;
+}
 blockquote {
 	margin: 0;
 }
@@ -131,7 +134,6 @@ blockquote span,
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
-	cursor: pointer;
 	line-height: 1;
 }
 .btn[disabled] {
