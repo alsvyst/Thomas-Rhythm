@@ -269,6 +269,9 @@ textarea.form-control {
 .about-studio {
 	border-bottom: 1px solid rgba(19, 19, 19, .08);
 }
+.about-studio .team-wrapper {
+	margin-top: 108px;
+}
 .about-studio .team-item .team-item-img {
 	position: relative;
 	margin-bottom: 30px;
@@ -301,12 +304,12 @@ textarea.form-control {
 /* ----- Services start ----- */
 #tabs .tabs-nav {
 	overflow: hidden;
+	margin-bottom: 80px;
 }
 #tabs .tabs-nav li {
 	float: left;
 	width: 20%;
 	text-align: center;
-	margin-bottom: 80px;
 }
 #tabs .tabs-nav li.ui-state-active {
 	color: #111;
@@ -353,9 +356,11 @@ textarea.form-control {
 	max-width: 750px;
 	margin: 0 auto;
 }
+#tabs-portfolio {
+	margin-top: 85px;
+}
 #tabs-portfolio .tabs-nav {
 	text-align: center;
-	margin-top: 85px;
 	margin-bottom: 50px;
 }
 #tabs-portfolio .tabs-nav li {
