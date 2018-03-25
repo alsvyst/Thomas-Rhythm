@@ -2,6 +2,9 @@
 *{
 	box-sizing: border-box;
 }
+*:focus {
+	outline: none;
+}
 body{
 	margin: 0;
 	background-color: #fff;
@@ -39,6 +42,7 @@ button {
 button {
 	cursor: pointer;
 	background-color: transparent;
+	padding: 0;
 }
 textarea {
 	resize: vertical;
@@ -68,6 +72,11 @@ blockquote {
 }
 .bg-grey {
 	background-color: #f8f8f8;
+}
+.m-auto {
+	float: none;
+	margin-left: auto;
+	margin: auto;
 }
 /* ===== Default classes end ===== */
 /* ===== Default component start ===== */
@@ -195,6 +204,29 @@ textarea.form-control {
 }
 .form-info .fa {
 	font-size: 12px;
+}
+.rhomb-icon {
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	text-align: center;
+	line-height: 23px;
+	border-radius: 2px;
+	font-size: 14px;
+	transform: rotate(45deg);
+}
+.rhomb-icon i {
+	transform: rotate(-45deg);
+}
+.rhomb-icon.black-icon {
+	color: #fff;
+	background-color: #111;
+}
+.rhomb-icon.transparent-icon {
+	color: #111;
+	border: 1px solid #111;
+	width: 25px;
+	height: 25px;
 }
 .header {
 	overflow: hidden;
@@ -356,8 +388,11 @@ textarea.form-control {
 	max-width: 750px;
 	margin: 0 auto;
 }
-#tabs-portfolio {
+.portfolio .tabs-wrapper {
 	margin-top: 85px;
+}
+#tabs-portfolio {
+	margin: 0 -4px;
 }
 #tabs-portfolio .tabs-nav {
 	text-align: center;
@@ -414,6 +449,101 @@ textarea.form-control {
 	margin: 35px 0;
 }
 /* ----- Why choose us end ----- */
+/* ----- Reviews start ----- */
+.reviews-carousel {
+	padding: 135px 0;
+	overflow: hidden;
+}
+.reviews-carousel .slide-content .icon {
+	font-size: 32px;
+	color: #fff;
+	margin-bottom: 23px;
+}
+.reviews-carousel .slide-content p {
+	font-size: 18px;
+	line-height: 1.66666666;
+	font-weight: 300;
+	color: rgba(255, 255, 255, .75);
+	max-width: 740px;
+	margin: 0 auto;
+	margin-bottom: 27px;
+}
+.reviews-carousel .slide-content .review-author {
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	text-indent: .2em;
+	font-weight: 400;
+	font-size: 11px;
+	color: rgba(255, 255, 255, .3);
+}
+.slick-dots {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 30px;
+}
+.slick-dots li {
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	background-color: rgba(255, 255, 255, .8);
+	border: 1px solid #000;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.slick-dots li button {
+	display: none;
+}
+.slick-dots li + li {
+	margin-left: 5px;
+}
+.slick-dots li.slick-active {
+	background-color: #000;
+	border-color: rgba(255, 255, 255, .8);;
+}
+.slick-arrow {
+	position: absolute;
+	height: 100%;
+	z-index: 1;
+	width: 90px;
+	cursor: pointer;
+}
+.slick-arrow.slick-prev {
+	left: 0;
+	top: 0;
+}
+.slick-arrow.slick-next {
+	right: 0;
+	top: 0;
+}
+.slick-arrow .carousel-button {
+	width: 63px;
+	height: 63px;
+	background-color: #fff;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 50%;
+	margin-left: -32px;
+	margin-top: -31px;
+}
+.slick-arrow.slick-next .carousel-button {
+	right: 0;
+	margin-right: -31px;
+}
+.slick-arrow .carousel-button .fa{
+	position: absolute;
+	transform: rotate(45deg);
+	font-size: 10px;
+}
+.slick-arrow.slick-prev .carousel-button .fa {
+	bottom: 14px;
+	right: 17px;
+}
+.slick-arrow.slick-next .carousel-button .fa {
+	top: 17px;
+	left: 14px;
+}
+/* ----- Reviews end ----- */
 /* ----- Latest news start ----- */
 .latest-news .title a {
 	float: right;
@@ -458,4 +588,59 @@ textarea.form-control {
 	margin-top: 17px;
 }
 /* ----- Subscribe end ----- */
+/* ----- Contacts start ----- */
+.contact-item .contact-item-content {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 15px;
+}
+.contact-item .contact-item-content span {
+	display: block;
+}
+.contact-item .contact-item-content .contact-title {
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .3em;
+	font-weight: 400;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+.contact-item .contact-item-content .contact-data {
+	font-size: 15px;
+	font-weight: 300;
+	color: #444;
+}
+/* ----- Contacts end ----- */
+/* ----- Footer start ----- */
+.footer {
+	padding: 140px 0 60px;
+}
+.footer .footer-socials {
+	margin-top: 24px;
+}
+.footer .footer-socials li {
+	display: inline-block;
+}
+.footer .footer-socials li + li {
+	margin-left: 13px;
+}
+.footer span {
+	display: block;
+	font-weight: 400;
+}
+.footer .copyright {
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	text-indent: .5em;
+	font-size: 12px;
+	color: #111;
+	margin-top: 110px;
+	margin-bottom: 15px;
+}
+.footer .postscriptum {
+	font-size: 11px;
+	color: #999;
+}
+/* ----- Footer end ----- */
 /* ==== Custom styles end ===== */
