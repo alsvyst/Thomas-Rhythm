@@ -140,6 +140,11 @@ blockquote span,
 	text-transform: uppercase;
 	letter-spacing: .2em;
 }
+@media (max-width: 991px) {
+	blockquote {
+		margin-bottom: 30px;
+	}
+}
 .btn {
 	display: inline-block;
 	padding: 12px 20px;
@@ -239,7 +244,6 @@ textarea.form-control {
 	height: 25px;
 }
 .header {
-	overflow: hidden;
 	position: absolute;
 	width: 100%;
 	top: 0;
@@ -272,6 +276,17 @@ textarea.form-control {
 }
 .header .header-nav li + li {
 	margin-left: 35px;
+}
+.slicknav_menu {
+	display: none;
+}
+@media (max-width: 767px) {
+	.slicknav_menu {
+		display: block;
+	}
+	.header-nav {
+		display: none;
+	}
 }
 /* ===== Default component end ===== */
 /* ===== Guide styles start ===== */
@@ -328,6 +343,21 @@ textarea.form-control {
 	position: relative;
 	top: 3px;
 	left: 3px;
+}
+@media (max-width: 991px) {
+	.inner .inner-content h1 {
+		letter-spacing: .7em;
+		text-indent: .7em;
+	}
+	.inner .inner-content span {
+		margin-top: 50px;
+	}
+}
+@media (max-width: 767px) {
+	.inner {
+		height: auto;
+		padding: 150px;
+	}
 }
 /* ----- Inner end ----- */
 /* ----- About studio start ----- */
@@ -429,6 +459,14 @@ textarea.form-control {
 	font-size: 12px;
 	margin-top: 14px;
 }
+@media (max-width: 991px) {
+	.about-studio .team-item .team-item-info span.team-item-name {
+		font-size: 12px;
+	}
+	.about-studio .team-item .team-item-info span.team-item-role {
+		font-size: 9px;
+	}
+}
 /* ----- About studio end ----- */
 /* ----- Services start ----- */
 #tabs .tabs-nav {
@@ -462,6 +500,14 @@ textarea.form-control {
 	font-size: 14px;
 	margin-top: 35px;
 }
+@media (max-width: 991px) {
+	#tabs .tabs-nav {
+		margin-bottom: 40px;
+	}
+	#tabs .tabs-nav li .tabs-name {
+		font-size: 12px;
+	}
+}
 /* ----- Services end ----- */
 /* ----- Lets talk start ----- */
 .lets-talk-content {
@@ -474,7 +520,12 @@ textarea.form-control {
 .lets-talk .lets-talk-img {
 	margin-top: -32px;
 }
-
+@media (max-width: 991px) {
+	.lets-talk-content {
+		text-align: center;
+		padding: 70px 0;
+	}
+}
 /* ----- Lets talk end ----- */
 /* ----- Portfolio start ----- */
 .portfolio {
@@ -530,6 +581,11 @@ textarea.form-control {
 #tabs-portfolio .portfolio-item img {
 	width: 100%;
 }
+@media (max-width: 991px) {
+	#tabs-portfolio .portfolio-item {
+		width: 50%;
+	}
+}
 /* ----- Portfolio end ----- */
 /* ----- Why choose us start ----- */
 .why-choose-us .row + .row {
@@ -544,6 +600,17 @@ textarea.form-control {
 	letter-spacing: .4em;
 	text-indent: .4em;
 	margin: 35px 0;
+}
+@media (max-width: 991px) {
+	.why-choose-us {
+		text-align: center;
+	}
+	.why-choose-us .row + .row {
+		margin-top: 0;
+	}
+	.why-choose-us p {
+		margin-bottom: 50px;
+	}
 }
 /* ----- Why choose us end ----- */
 /* ----- Reviews start ----- */
@@ -640,6 +707,11 @@ textarea.form-control {
 	top: 17px;
 	left: 14px;
 }
+@media (max-width: 991px) {
+	.reviews-carousel .slide-content p {
+		max-width: 576px;
+	}
+}
 /* ----- Reviews end ----- */
 /* ----- Latest news start ----- */
 .latest-news .title a {
@@ -676,6 +748,16 @@ textarea.form-control {
 	color: #999999;
 	margin-bottom: 30px;
 }
+@media (max-width: 991px) {
+	.latest-news .news-item .news-item-img img {
+		width: 100%;
+	}
+	.latest-news .news-item {
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		border-bottom: 2px solid #999;
+	}
+}
 /* ----- Latest news end ----- */
 /* -----  Subscribe start ----- */
 .subscribe form .form-control {
@@ -711,7 +793,7 @@ textarea.form-control {
 	font-weight: 300;
 	color: #444;
 }
-.contact-form {
+.contact-form .form-row {
 	margin: 0 -5px;
 	overflow: hidden;
 }
@@ -719,17 +801,15 @@ textarea.form-control {
 	float: left;
 	width: 50%;
 	padding: 0 5px;
-	margin-bottom: 20px;
 }
 .contact-form .form-control + .form-control {
 	margin-top: 10px;
 }
+.contact-form .form-submit {
+	margin-top: 20px;
+}
 .contact-form .form-info {
 	line-height: 36px;
-	margin-left: 5px;
-}
-.contact-form button {
-	margin-right: 5px;
 }
 /* ----- Contacts end ----- */
 /* ----- Map start ----- */
@@ -814,3 +894,16 @@ textarea.form-control {
 }
 /* ----- Footer end ----- */
 /* ==== Custom styles end ===== */
+
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 991px) {
+	
+}
+@media (max-width: 767px) {
+	
+}
+@media (max-width: 576px) {
+	
+}
