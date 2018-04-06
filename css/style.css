@@ -356,7 +356,16 @@ textarea.form-control {
 @media (max-width: 767px) {
 	.inner {
 		height: auto;
-		padding: 150px;
+		padding: 150px 0;
+	}
+	.inner .inner-content h1 {
+		letter-spacing: .4em;
+		text-indent: .4em;
+		font-size: 20px;
+	}
+	.inner .inner-content span {
+		font-size: 16px;
+		margin-top: 35px;
 	}
 }
 /* ----- Inner end ----- */
@@ -459,12 +468,51 @@ textarea.form-control {
 	font-size: 12px;
 	margin-top: 14px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
+	.about-studio .team-item .team-item-skills {
+		padding: 20px;
+	}
+	.about-studio .team-item-skills > p {
+		margin-top: 15px;
+    	margin-bottom: 30px;
+	}
+}
+@media (max-width: 991px) and (min-width: 768px) {
 	.about-studio .team-item .team-item-info span.team-item-name {
 		font-size: 12px;
 	}
 	.about-studio .team-item .team-item-info span.team-item-role {
 		font-size: 9px;
+	}
+	.about-studio .team-item-skills > span {
+		font-size: 14px;
+	}
+	.about-studio .team-item-skills > p {
+		margin-top: 10px;
+		margin-bottom: 15px;
+	}
+	.about-studio .team-item-skills .skill-item .progress-wrap {
+		height: 4px;
+	}
+	.about-studio .team-item-skills .skill-item + .skill-item {
+		margin-top: 10px;
+	}
+}
+@media (max-width: 767px) {
+	.about-studio .col:nth-child(3) p {
+		margin-top: 30px;
+	}
+	.about-studio .team-wrapper {
+		text-align: center;
+	}
+	.about-studio .team-wrapper .col:not(:last-child) .team-item {
+		margin-bottom: 50px;
+	}
+	.about-studio .team-item .team-item-img {
+		margin-bottom: 20px;
+	}
+	.about-studio .team-item .team-item-img img {
+		width: 100%;
 	}
 }
 /* ----- About studio end ----- */
@@ -506,6 +554,18 @@ textarea.form-control {
 	}
 	#tabs .tabs-nav li .tabs-name {
 		font-size: 12px;
+	}
+}
+@media (max-width: 767px) {
+	#tabs .tabs-nav li {
+		width: 33.3333333%;
+	}
+	#tabs .tabs-nav li:nth-child(4), #tabs .tabs-nav li:nth-child(5) {
+		width: 50%;
+		margin-top: 40px;
+	}
+	#tabs .row .col:nth-child(3) p {
+		margin-top: 30px;
 	}
 }
 /* ----- Services end ----- */
@@ -584,6 +644,21 @@ textarea.form-control {
 @media (max-width: 991px) {
 	#tabs-portfolio .portfolio-item {
 		width: 50%;
+	}
+}
+@media (max-width: 767px) {
+	.portfolio .tabs-wrapper {
+		margin-top: 50px;
+	}
+	#tabs-portfolio .tabs-nav li {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	#tabs-portfolio .tabs-nav li + li {
+		margin-left: 0;
+	}
+	#tabs-portfolio .portfolio-item {
+		width: 100%;
 	}
 }
 /* ----- Portfolio end ----- */
@@ -712,6 +787,22 @@ textarea.form-control {
 		max-width: 576px;
 	}
 }
+@media (max-width: 767px) {
+	.reviews-carousel .slide-content p {
+	max-width: 479px;
+	}
+}
+@media (max-width: 576px) {
+	.reviews-carousel .slide-content p {
+		max-width: 320px;
+		font-size: 14px;
+	}
+}
+@media (max-width: 476px) {
+	.reviews-carousel .slide-content p {
+		max-width: 200px;
+	}
+}
 /* ----- Reviews end ----- */
 /* ----- Latest news start ----- */
 .latest-news .title a {
@@ -758,6 +849,13 @@ textarea.form-control {
 		border-bottom: 2px solid #999;
 	}
 }
+@media (max-width: 576px) {
+	.latest-news .title a {
+		float: none;
+		display: block;
+		margin-top: 30px;
+	}
+}
 /* ----- Latest news end ----- */
 /* -----  Subscribe start ----- */
 .subscribe form .form-control {
@@ -765,6 +863,16 @@ textarea.form-control {
 }
 .subscribe .form-info {
 	margin-top: 17px;
+}
+@media (max-width: 476px) {
+	.subscribe form .form-control {
+		max-width: none;
+	}
+	.subscribe .btn {
+		display: block;
+		width: 100%;
+		margin-top: 10px;
+	}
 }
 /* ----- Subscribe end ----- */
 /* ----- Contacts start ----- */
@@ -810,6 +918,40 @@ textarea.form-control {
 }
 .contact-form .form-info {
 	line-height: 36px;
+}
+@media (max-width: 767px) {
+	.contact-items-wrapper {
+		text-align: center;
+	}
+	.contact-items-wrapper .col:not(:last-child) .contact-item {
+		margin-bottom: 40px;
+	}
+	.contact-item .contact-item-content {
+		display: block;
+		margin-left: 0;
+		margin-top: 15px;
+	}
+	.contact-form .form-col {
+		width: 100%;
+	}
+	textarea.form-control {
+		margin-top: 10px;
+	}
+}
+@media (max-width: 476px) {
+	.contact-form .form-submit {
+		margin-top: 0;
+	}
+	.contact-form .form-info {
+		text-align: center;
+		float: none;
+	}
+	.form-submit .btn {
+		display: block;
+		width: 100%;
+		margin-top: 10px;
+		margin-top: 0;
+	}
 }
 /* ----- Contacts end ----- */
 /* ----- Map start ----- */
