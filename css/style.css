@@ -798,7 +798,7 @@ textarea.form-control {
 		font-size: 14px;
 	}
 }
-@media (max-width: 476px) {
+@media (max-width: 479px) {
 	.reviews-carousel .slide-content p {
 		max-width: 200px;
 	}
@@ -864,7 +864,7 @@ textarea.form-control {
 .subscribe .form-info {
 	margin-top: 17px;
 }
-@media (max-width: 476px) {
+@media (max-width: 479px) {
 	.subscribe form .form-control {
 		max-width: none;
 	}
@@ -938,7 +938,7 @@ textarea.form-control {
 		margin-top: 10px;
 	}
 }
-@media (max-width: 476px) {
+@media (max-width: 479px) {
 	.contact-form .form-submit {
 		margin-top: 0;
 	}
@@ -1036,16 +1036,3 @@ textarea.form-control {
 }
 /* ----- Footer end ----- */
 /* ==== Custom styles end ===== */
-
-@media (max-width: 1200px) {
-
-}
-@media (max-width: 991px) {
-	
-}
-@media (max-width: 767px) {
-	
-}
-@media (max-width: 576px) {
-	
-}
