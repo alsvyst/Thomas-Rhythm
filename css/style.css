@@ -124,6 +124,11 @@ blockquote {
 	margin-bottom: 20px;
 	font-weight: 300;
 }
+@media (max-width: 576px) {
+	.title.section-title-light {
+		line-height: 1.5;
+	}
+}
 .default-text {
 	font-size: 15px;
 	line-height: 1.7333;
